@@ -51,6 +51,20 @@
     .navbar .nav-links a:hover {
         color: #8b0000;
     }
+        
+    /* Top banner styling */
+    .top-banner {
+        width: 100%;
+        background-color: #8b0000; /* deep red */
+        color: #f5f5f5;
+        text-align: center;
+        padding: 8px 0;
+        font-weight: bold;
+        font-size: 1rem;
+        position: sticky; /* optional if you want it to stick on scroll */
+        top: 0;
+        z-index: 101; /* above navbar */
+    }
 
     /* --- Hero Section --- */
     .hero {
@@ -62,6 +76,16 @@
         align-items: center;
         text-align: center;
         padding: 0 20px;
+    }
+    .coming-soon {
+        position: absolute;
+        top: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #f5f5f5;
+        background-color: rgba(139,0,0,0.7); /* semi-transparent deep red */
+        padding: 5px 15px;
+        border-radius: 5px;
     }
 
     .hero h1 {
@@ -80,7 +104,6 @@
     .hero p {
         font-size: 1.2rem;
         color: #f5f5f5;
-        margin-bottom: 60px;
     }
 
     /* --- Section styling --- */
@@ -190,7 +213,7 @@
 
 <!-- HERO -->
 <section class="hero">
-    <p>Coming Soon to AZ</p>
+    <div class="coming-soon">Coming Soon to AZ</div>
     <h1>No locks, No puzzles.</h1>
     <h1>Only missions and survival.</h1>
     <h3>Are you ready for the new escape room experience?</h3>
